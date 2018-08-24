@@ -52,7 +52,7 @@ function showNewMessage(message) {
     var senderName = message.substring(0,message.indexOf(":"));
     var msg = message.substring(message.indexOf(":")+1);
     $("#chatX").append( '<li class="left clearfix">'+
-            `<span class="chat-img1 ${name === senderName?'pull-right':'pull-left'}">`+
+            `<span class="chat-img1 ${name != senderName?'pull-right':'pull-left'}">`+
         '<h6>'+
         senderName+'</h6>'+
         '</span>'+
